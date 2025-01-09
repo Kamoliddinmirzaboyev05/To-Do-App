@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <main>
+      <div class="left-side">
+        <div class="profile">
+          <div class="profile-img">
+            <img src="img/anthony-choren-SCnwI0r1uH4-unsplash.jpg" alt="" />
+          </div>
+          <div class="user">
+            <h2 class="name">Kamoliddin Mirzaboyev</h2>
+            <p class="user-email">kamoliddinmirzaboyev05@gmail.com</p>
+          </div>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Search" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="types">
+          <div class="type myDay">
+            <img src="img/bx-sun.svg.svg" alt="" />
+            <h2>My Day</h2>
+          </div>
+          <div class="type">
+            <i class="fa-regular fa-star"></i>
+            <h2>Important</h2>
+          </div>
+          <div class="type">
+            <i class="fa-regular fa-rectangle-list"></i>
+            <h2>Planned</h2>
+          </div>
+          <div class="type">
+            <i class="fa-solid fa-house"></i>
+            <h2>Tasks</h2>
+          </div>
+        </div>
+      </div>
+      <section>
+        <nav>
+          <h1>My Day</h1>
+          <div class="date">
+            <p>Wednesday</p>
+            <p>January</p>
+            <p>8</p>
+          </div>
+        </nav>
+        <div class="section">
+          <div class="tasks"></div>
+          <div>
+            <form action="#" class="input-task">
+              <button class="add-btn" type="submit">+</button>
+              <input type="text" id="inputTask" placeholder="Add a task" />
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="right-side">
+        <div class="right-title">
+          <h1>Complated</h1>
+          <div class="complated-check">
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <div class="types">
+          <div class="type complatedMyDay">
+            <div class="complated-head">
+              <div class="type-name">
+                <img src="img/bx-sun.svg.svg" alt="" />
+                <h2>My Day</h2>
+              </div>
+              <i class="fa-solid fa-chevron-right right" id="mayDayRight"></i>
+            </div>
+            <div class="complated-tasks"></div>
+          </div>
+          <div class="type complatedImportant">
+            <div class="complated-head">
+              <div class="type-name">
+                <i class="fa-regular fa-star"></i>
+                <h2>Important</h2>
+              </div>
+              <i class="fa-solid fa-chevron-right right" id="mayDayRight"></i>
+            </div>
+            <div class="complated-tasks"></div>
+          </div>
+          <div class="type complatedPlanned">
+            <div class="complated-head">
+              <div class="type-name">
+                <i class="fa-regular fa-rectangle-list"></i>
+                <h2>Planned</h2>
+              </div>
+              <i class="fa-solid fa-chevron-right right" id="mayDayRight"></i>
+            </div>
+            <div class="complated-tasks"></div>
+          </div>
+          <div class="type complatedTasks">
+            <div class="complated-head">
+              <div class="type-name">
+                <i class="fa-solid fa-house"></i>
+                <h2>Tasks</h2>
+              </div>
+              <i class="fa-solid fa-chevron-right right" id="mayDayRight"></i>
+            </div>
+            <div class="complated-tasks"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+    <script src="complatedtask.js"></script>
+  </body>
+</html>
