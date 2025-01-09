@@ -33,7 +33,7 @@
           </div>
         </div>
         <div class="search">
-          <input type="text" placeholder="Search" />
+          <input type="text" class="searchInput" placeholder="Search" />
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <div class="types">
@@ -58,10 +58,25 @@
       <section>
         <nav>
           <h1>My Day</h1>
-          <div class="date">
-            <p>Wednesday</p>
-            <p>January</p>
-            <p>8</p>
+          <div class="time">
+            <div class="date">
+              <p class="weekDay"></p>
+              <p class="month"></p>
+              <p class="monthDay"></p>
+            </div>
+            <div class="watch">
+              <div class="square">
+                <p class="hour"></p>
+              </div>
+              <p>:</p>
+              <div class="square">
+                <p class="minut"></p>
+              </div>
+              <p>:</p>
+              <div class="square">
+                <p class="second"></p>
+              </div>
+            </div>
           </div>
         </nav>
         <div class="section">
@@ -128,6 +143,6 @@
     </main>
 
     <script src="app.js"></script>
-    <script src="complatedtask.js"></script>
+    <!-- <script src="complatedtask.js"></script> -->
   </body>
 </html>

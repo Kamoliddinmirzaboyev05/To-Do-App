@@ -149,11 +149,12 @@ nav h1 {
   align-items: center;
   gap: 10px;
 }
+.task-text p {
+  width: 100%;
+  word-wrap: break-word;
+  word-break: break-word;
+}
 .check {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  border: 1px solid gray;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,6 +177,7 @@ nav h1 {
   border: none;
   outline: none;
   font-size: 16px;
+  width: 100%;
 }
 .add-btn {
   width: 40px;
@@ -254,7 +256,7 @@ nav h1 {
 .rotate {
   transform: rotate(90deg);
 }
-.complated-head{
+.complated-head {
   cursor: pointer;
 }
 .complated-tasks {
@@ -278,6 +280,48 @@ nav h1 {
   flex-direction: column;
   gap: 5px;
 }
-.checkedTask{
+.checkedTask p {
   text-decoration: line-through;
+  color: #687681;
+}
+.task-btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.trash:hover{
+  color: red;
+}
+.none {
+  display: none !important;
+}
+.display {
+  display: block !important;
+  color: #687681;
+}
+.time{
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.watch{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.watch p{
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+}
+.square{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: #68768152;
 }
