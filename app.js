@@ -78,11 +78,11 @@ setInterval(() => {
   month.textContent = months[date.getMonth()];
   monthDay.textContent = date.getDate();
   hour.textContent =
-    date.getHours() > 10 ? date.getHours() : `0${date.getHours()}`;
+    date.getHours() > 9 ? date.getHours() : `0${date.getHours()}`;
   minut.textContent =
-    date.getMinutes() > 10 ? date.getMinutes() : `0${date.getMinutes()}`;
+    date.getMinutes() > 9 ? date.getMinutes() : `0${date.getMinutes()}`;
   second.textContent =
-    date.getSeconds() > 10 ? date.getSeconds() : `0${date.getSeconds()}`;
+    date.getSeconds() > 9 ? date.getSeconds() : `0${date.getSeconds()}`;
 }, 1000);
 
 //   Taskni HTML ga yozib beradigan funksiya
