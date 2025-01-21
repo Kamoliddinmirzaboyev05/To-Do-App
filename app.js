@@ -1,4 +1,3 @@
-
 const checkeds = document.querySelectorAll(".check");
 const inputTask = document.querySelector("#inputTask");
 const addBtn = document.querySelector(".add-btn");
@@ -26,7 +25,6 @@ var enter = localStorage.getItem("enter")
 if (enter == "true") {
   registeration.style.top = "-2000px";
   registeration.style.zIndex = "-2000";
-
 }
 
 signIn.addEventListener("click", () => {
@@ -41,6 +39,7 @@ signUp.addEventListener("click", () => {
 loginBtn.addEventListener("click", () => {
   if (loginText.value == "admin" && passwordText.value == "1234") {
     registeration.style.top = "-2000px";
+    registeration.style.zIndex = "-2000";
     enter = "true";
     localStorage.setItem("enter", enter);
   }
