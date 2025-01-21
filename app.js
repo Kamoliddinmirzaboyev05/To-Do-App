@@ -1,3 +1,4 @@
+
 const checkeds = document.querySelectorAll(".check");
 const inputTask = document.querySelector("#inputTask");
 const addBtn = document.querySelector(".add-btn");
@@ -24,6 +25,8 @@ var enter = localStorage.getItem("enter")
 
 if (enter == "true") {
   registeration.style.top = "-2000px";
+  registeration.style.zIndex = "-2000";
+
 }
 
 signIn.addEventListener("click", () => {
