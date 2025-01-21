@@ -8,6 +8,43 @@ const complatedTasks = document.querySelector(".complated-tasks");
 const searchInput = document.querySelector(".searchInput");
 const checkedTask = document.querySelectorAll(".checkedTask");
 
+// Registration start
+
+const signIn = document.querySelector(".signIn");
+const signUp = document.querySelector(".signUp");
+const formBack = document.querySelector(".form-back");
+const registeration = document.querySelector(".registeration");
+const loginText = document.querySelector("#loginText");
+const passwordText = document.querySelector("#passwordText");
+const loginBtn = document.querySelector(".loginBtn");
+
+var enter = localStorage.getItem("enter")
+  ? localStorage.getItem("enter")
+  : "false";
+
+if (enter == "true") {
+  registeration.style.top = "-2000px";
+}
+
+signIn.addEventListener("click", () => {
+  formBack.classList.add("loginActive");
+  registeration.style.backgroundImage = "url(img/back6.jpg)";
+});
+signUp.addEventListener("click", () => {
+  formBack.classList.remove("loginActive");
+  registeration.style.backgroundImage = "url(img/back5.jpg)";
+});
+
+loginBtn.addEventListener("click", () => {
+  if (loginText.value == "admin" && passwordText.value == "1234") {
+    registeration.style.top = "-2000px";
+    enter = "true";
+    localStorage.setItem("enter", enter);
+  }
+});
+
+// Registration end
+
 var myDayDB = JSON.parse(localStorage.getItem("myDayDB"))
   ? JSON.parse(localStorage.getItem("myDayDB"))
   : [];
