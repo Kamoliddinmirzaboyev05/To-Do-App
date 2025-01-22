@@ -175,6 +175,7 @@ main {
   background-color: #e8e8e8;
   padding: 50px 10px;
   height: 100vh;
+  position: relative;
 }
 .profile {
   gap: 15px;
@@ -198,11 +199,30 @@ main {
   width: 180%;
 }
 .name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   font-size: 17px;
   font-weight: 600;
 }
 .user-email {
   font-size: 12px;
+}
+.logout{
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  font-size: 16px;
+  padding: 5px 10px;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+.logout h2{
+  font-size: 15px;
 }
 .types {
   padding-top: 30px;
@@ -225,8 +245,9 @@ main {
 .type:hover {
   background-color: #dadada;
 }
-.myDay {
-  background-color: #e0e0e0;
+.activeWind {
+  background-color: #c8d8ff;
+
 }
 
 .type h2 {
@@ -257,7 +278,7 @@ main {
 section {
   height: 100vh;
   width: 100%;
-  background-image: url("img/back2.jpg");
+  background-image: url("img/mydayback.jpg");
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -344,7 +365,7 @@ nav h1 {
 /* Styling right side */
 
 .right-side {
-  width: 400px;
+  width: 500px;
   padding: 30px 15px;
   background-color: #e8e8e8;
 }
