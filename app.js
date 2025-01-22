@@ -141,11 +141,21 @@ signUp.addEventListener("click", () => {
 });
 
 loginBtn.addEventListener("click", () => {
+  loginText.style.borderColor = "black";
+    passwordText.style.borderColor = "black";
   if (loginText.value == "admin" && passwordText.value == "1234") {
     registeration.style.top = "-2000px";
     registeration.style.zIndex = "-2000";
     enter = "true";
     localStorage.setItem("enter", enter);
+  }else{
+    loginText.style.borderColor = "red";
+    loginText.style.borderStyle = "dotted";
+    passwordText.style.borderStyle = "dotted";
+    passwordText.style.borderColor = "red";
+    alert("Login yoki parol noto'g'ri! Iltimos qaytadan kiriting!")
+    loginText.value = ""
+    passwordText.value = ""
   }
 });
 
