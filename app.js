@@ -126,38 +126,9 @@ var enter = localStorage.getItem("enter")
   ? localStorage.getItem("enter")
   : "false";
 
-if (enter == "true") {
-  registeration.style.top = "-2000px";
-  registeration.style.zIndex = "-2000";
-}
 
-signIn.addEventListener("click", () => {
-  formBack.classList.add("loginActive");
-  registeration.style.backgroundImage = "url(img/back6.jpg)";
-});
-signUp.addEventListener("click", () => {
-  formBack.classList.remove("loginActive");
-  registeration.style.backgroundImage = "url(img/back5.jpg)";
-});
 
-loginBtn.addEventListener("click", () => {
-  loginText.style.borderColor = "black";
-    passwordText.style.borderColor = "black";
-  if (loginText.value == "admin" && passwordText.value == "1234") {
-    registeration.style.top = "-2000px";
-    registeration.style.zIndex = "-2000";
-    enter = "true";
-    localStorage.setItem("enter", enter);
-  }else{
-    loginText.style.borderColor = "red";
-    loginText.style.borderStyle = "dotted";
-    passwordText.style.borderStyle = "dotted";
-    passwordText.style.borderColor = "red";
-    alert("Login yoki parol noto'g'ri! Iltimos qaytadan kiriting!")
-    loginText.value = ""
-    passwordText.value = ""
-  }
-});
+
 
 // Registration end
 
@@ -195,7 +166,8 @@ writeTask();
 
 writeTask();
 
-addBtn.addEventListener("click", () => {
+addBtn.addEventListener("click", (e) => {
+  e.preventDefault();
   if (inputTask.value != "") {
     var task = {
       id: Date.now(),
